@@ -1,0 +1,36 @@
+.image {
+	display: inline-block;
+	height: 128px;
+	width: 128px;
+	border: 2px solid yellow;
+	border-radius: 10px;
+	margin: 10px;
+}
+
+.images {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slideshow {
+  position: relative;
+  overflow: hidden; 
+  height: 170px;
+}
+
+#images1 {	
+  animation: slideshow var(--speed1) linear infinite;
+}
+
+#images2 {	
+  animation: slideshow var(--speed2) linear infinite;
+}
+
+@keyframes slideshow {
+  0%    { left: 0; }
+  100%  { left: var(--end); }
+}
