@@ -24,7 +24,7 @@ slider1 = [image0, image1, image2, image3, image4, image5,image6, image7, image8
 let slider2 = new Array();
 slider2 = [image9, image8, image7, image6, image5, image4,image3, image2, image1, image0];
 
-
+//changes color of image to orange on mouse over event
 document.onmouseover = function (e) {
         let event = e || window.event;
 		let target = event.target || event.srcElement;
@@ -34,6 +34,7 @@ document.onmouseover = function (e) {
 		};
 };
 
+//changes color of image to white on mouse over event
 document.onmouseout = function (e) {
         let event = e || window.event;
 		let target = event.target || event.srcElement;
@@ -42,6 +43,7 @@ document.onmouseout = function (e) {
 		};
 };
 
+//alerts image id on click event
 document.onclick = function (e) {
         let event = e || window.event;
 		let target = event.target || event.srcElement;
